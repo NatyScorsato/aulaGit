@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Coletanea</title>
+    <link rel="stylesheet" href="login.css"></link>
+</head>
+<body>
+    <header>
+        <button onclick="toggleMode()" id="noturno">Dark Mode</button>
+    <h1><a href="index.html">COLETANEA DE CONTEUDOS</a></h1>
+</header>
+<main></main>
+<script>
+    function toggleMode() {
+        var element = document.body;
+        var botao = document.getElementById("noturno");
+        var textoD = "Dark Mode";
+        var textL = "Light Mode";
+
+        element.classList.toggle("dark-mode");
+
+        if (botao.innerHTML == textoD) {
+            botao.innerHTML = textL;
+        } else {
+            botao.innerHTML = textoD;
+        }
+    }
+</script>
+</body>
+</html>
